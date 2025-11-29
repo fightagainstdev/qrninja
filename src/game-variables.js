@@ -1,4 +1,4 @@
-const storeId = 'igorfie-black-cat-shinobi';
+const storeId = 'cat-warrior-lumin-highscore';
 
 let highScore = parseInt(localStorage.getItem(storeId)) || 0;
 let score;
