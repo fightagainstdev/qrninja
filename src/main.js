@@ -147,7 +147,7 @@ const drawMainMenu = () => {
 
     if (GameVars.highScore) {
         genSmallBox(mainMenuCtx, -1, -1, Math.floor(mainMenuCanv.width / toPixelSize(2)) + 2, 24, toPixelSize(2), "#060606", "#060606");
-        drawPixelTextInCanvas(GameVars.highScore === missions.length + 1 ? "游戏完成" : "最高关卡 - " + GameVars.highScore, mainMenuCtx, toPixelSize(1), Math.round(GameVars.gameW / 2 / toPixelSize(1)), 42, "#9bf2fa", 1);
+        drawPixelTextInCanvas(GameVars.highScore >= missions.length ? "游戏完成" : "最高关卡 - " + GameVars.highScore, mainMenuCtx, toPixelSize(1), Math.round(GameVars.gameW / 2 / toPixelSize(1)), 42, "#9bf2fa", 1);
     } else {
         genSmallBox(mainMenuCtx, -1, -1, Math.floor(mainMenuCanv.width / toPixelSize(2)) + 2, 19, toPixelSize(2), "#060606", "#060606");
     }
